@@ -6,6 +6,7 @@
 body {
     max-width: 1440px;
     margin: 20px auto;
+    background-color: rgb(253, 241, 243);
 }
 
 #title {
@@ -40,7 +41,7 @@ li {
     max-height: 600px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 8px 7px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px 4px rgba(0,0,0,0.2);
     margin-top: 20px;
 }
 
