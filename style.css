@@ -1,0 +1,50 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease;
+}
+
+body {
+    max-width: 1440px;
+    margin: 20px auto;
+}
+
+#title {
+    font-size: 48px;
+    text-align: center;
+    color: rgb(2, 80, 73);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#nav-links li a, .back-btn {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+#nav-links a:hover, .back-btn:hover {
+    color: rgb(2, 80, 73);
+    border-color: rgb(2, 80, 73);
+    letter-spacing: 2px;
+}
+
+.food-image {
+    width: 100%;
+    height: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 7px 3px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+.sub-title {
+   border-top: 1px solid rgb(2, 80, 73);
+   padding-top: 10px;
+}
