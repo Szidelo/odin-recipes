@@ -1,6 +1,9 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -15,12 +18,38 @@ body {
     color: rgb(2, 80, 73);
 }
 
+.nav-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav-container #nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-container #nav-links li {
+    display: inline;
+    text-align: center;
+}
+
 ul {
     list-style: none;
 }
 
 li {
-    margin-bottom: 10px;
+    margin: 10px 20px;
+}
+
+.back-btn {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 24px;
+    border-radius: 10px;
+
 }
 
 #nav-links li a, .back-btn {
@@ -29,10 +58,19 @@ li {
     border-bottom: 1px solid transparent;
 }
 
-#nav-links a:hover, .back-btn:hover {
+.back-btn:hover {
+    background-color: rgb(2, 80, 73);
+    color: rgb(253, 241, 243);
+}
+
+#nav-links a:hover {
     color: rgb(2, 80, 73);
     border-color: rgb(2, 80, 73);
     letter-spacing: 2px;
+}
+
+.image-container {
+    margin: 0 auto;
 }
 
 .food-image {
@@ -40,12 +78,25 @@ li {
     height: 600px;
     max-height: 600px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 10px 20px 4px rgba(0,0,0,0.2);
     margin-top: 20px;
 }
 
 .sub-title {
-   border-top: 1px solid rgb(2, 80, 73);
-   padding-top: 10px;
+   background-color: rgba(0,0,0,0.2);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.description-container {
+    background-color: rgb(2, 80, 73);
+    color: white;
+    padding-bottom: 10px;
+    margin: 16px 0;
+    border-radius: 10px;
+}
+
+.description-container .content {
+    padding: 20px;
 }
