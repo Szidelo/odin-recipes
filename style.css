@@ -7,9 +7,24 @@
 }
 
 body {
+    background-color: rgb(224, 224, 222);
+}
+
+.main {
+    background-image: url("./images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container {
     max-width: 1440px;
-    margin: 20px auto;
-    background-color: rgb(253, 241, 243);
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #title {
@@ -19,7 +34,6 @@ body {
 }
 
 .nav-container {
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -32,6 +46,32 @@ body {
 .nav-container #nav-links li {
     display: inline;
     text-align: center;
+    box-shadow: 0 5px 15px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.card-image {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-image img:hover {
+    scale: 1.1;
+}
+
+.link-card h3 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
 }
 
 ul {
@@ -55,7 +95,6 @@ li {
 #nav-links li a, .back-btn {
     color: black;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
 }
 
 .back-btn:hover {
@@ -66,7 +105,6 @@ li {
 #nav-links a:hover {
     color: rgb(2, 80, 73);
     border-color: rgb(2, 80, 73);
-    letter-spacing: 2px;
 }
 
 .image-container {
