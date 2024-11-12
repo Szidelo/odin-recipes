@@ -15,12 +15,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: inset 0 0 100px 10px black;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .home-container {
-    max-width: 1440px;
     height: 100vh;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +35,7 @@ body {
     font-size: 48px;
     text-align: center;
     color: rgb(2, 80, 73);
+    margin: 48px 0;
 }
 
 .nav-container {
@@ -54,17 +59,17 @@ body {
     height: 200px;
     width: 300px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .card-image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .card-image img:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .link-card h3 {
@@ -74,32 +79,39 @@ body {
     backdrop-filter: blur(10px);
 }
 
-ul {
-    list-style: none;
-}
-
 li {
     margin: 10px 20px;
 }
 
-.back-btn {
-    display: block;
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 8px 24px;
-    border-radius: 10px;
-
+.utility-buttons-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-#nav-links li a, .back-btn {
+.utility-buttons-section div {
+    flex: 1;
+    min-width: 33.33%;
+}
+
+.util-btn {
+    display: block;
+    padding: 0 24px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 1px solid transparent;
+}
+
+.util-btn:hover {
+    color: rgb(2, 80, 73);
+    letter-spacing: 2px;
+    border-color: rgb(2, 80, 73);
+}
+
+#nav-links li a, .util-btn {
     color: black;
     text-decoration: none;
-}
-
-.back-btn:hover {
-    background-color: rgb(2, 80, 73);
-    color: rgb(253, 241, 243);
 }
 
 #nav-links a:hover {
@@ -113,7 +125,7 @@ li {
 
 .food-image {
     width: 100%;
-    height: 600px;
+    height: 500px;
     max-height: 600px;
     object-fit: cover;
     border-radius: 10px;
